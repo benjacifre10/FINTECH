@@ -42,7 +42,6 @@ class WeatherController {
                 }
                 else {
                     let result = JSON.parse(body);
-                    console.log(result);
                     let url2 = `${process.env.OPEN_WEATHER_URL}/onecall?lat=${result.lat}&lon=${result.lon}&exclude=hourly,daily,minutely&appid=debe40fdbd3a1fdb8ed601c35d8b0698&lang=es`;
                     request_1.default(url2, (error, response, body) => {
                         if (error) {
@@ -80,7 +79,6 @@ class WeatherController {
                 }
                 else {
                     let result = JSON.parse(body);
-                    console.log(result);
                     let url2 = `${process.env.OPEN_WEATHER_URL}/forecast?q=${result.regionName}&appid=debe40fdbd3a1fdb8ed601c35d8b0698&lang=es`;
                     request_1.default(url2, (error, response, body) => {
                         if (error) {

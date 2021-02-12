@@ -43,10 +43,14 @@ class App {
     constructor(port) {
         this.port = port;
         this.app = express_1.default();
+        this.getApp();
         this.settings();
         this.middlewares();
         this.routes();
         this.errors();
+    }
+    getApp() {
+        return this.app;
     }
     settings() {
         this.app.set('port', this.port || process.env.FINTECH_SERVER_HTTP_PORT || 3001);

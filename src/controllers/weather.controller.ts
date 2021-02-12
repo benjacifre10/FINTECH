@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import request from 'request';
+import should from 'should';
 
 class WeatherController {
     /* this function try to get the location and other information of our actual ubication */
@@ -86,7 +87,7 @@ class WeatherController {
             });
         }
     }
-
+    
 }
 
 export const weatherController = new WeatherController();
