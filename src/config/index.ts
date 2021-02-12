@@ -12,10 +12,15 @@ export class App {
 
     constructor(private port?: number | string) {
         this.app = express();
+        this.getApp();
         this.settings();
         this.middlewares();
         this.routes();
         this.errors();
+    }
+
+    getApp(): Application {
+        return this.app;
     }
 
     settings(): void {
