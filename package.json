@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha --require ts-node/register --watch-extensions ts 'test/**/*.ts'",
-    "build": "tsc -w"
+    "build": "tsc -w",
+    "dev": "nodemon build/app.js"
   },
   "repository": {
     "type": "git",
