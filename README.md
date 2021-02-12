@@ -16,4 +16,8 @@ to run
 
 > npm run start
 
-port i use: 3001
+env content
+
+FINTECH_SERVER_HTTP_PORT = 3001
+OPEN_WEATHER_URL = https://api.openweathermap.org/data/2.5
+IP_API_URL = http://ip-api.com/json
