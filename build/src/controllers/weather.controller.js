@@ -15,7 +15,7 @@ class WeatherController {
                     message: error
                 });
             }
-            return res.json({ message: JSON.parse(body) });
+            return res.json({ data: JSON.parse(body) });
         });
     }
     /* this function try to get the current weather of our location or the current weather from other city */
